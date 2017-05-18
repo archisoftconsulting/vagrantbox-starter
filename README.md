@@ -1,5 +1,5 @@
 # VagrantBox-starter
-This is a starter guide that shows how to setup a local VDE(Virtual Development Environment) with vagrantbox that consist of:
+This is a starter on setting up a local VDE(Virtual Development Environment) with vagrantbox image that consist of:
 1. Ubuntu OS
 2. JDK 8
 3. Docker
