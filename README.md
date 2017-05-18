@@ -3,7 +3,7 @@ This is a starter on setting up a local VDE(Virtual Development Environment) wit
 1. Ubuntu OS
 2. JDK 8
 3. Docker
-4. A microservice demo app
+4. Microservice demo app
 
 ## Install VirtualBox
 Goto https://www.virtualbox.org/wiki/Downloads and click Windows hosts to download the exe file(installer) and run the exe to install it.
