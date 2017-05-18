@@ -2,7 +2,7 @@
 This is a starter on setting up a local VDE(Virtual Development Environment) with vagrantbox image that consist of:
 1. Ubuntu OS
 2. JDK 8
-3. Docker
+3. Docker + Docker compose
 4. Microservice demo app
 
 ## Install VirtualBox
@@ -83,3 +83,4 @@ Run the following commmand ./shutdown.sh
 ```
 vagrant@vagrant:~/b2b/event-sourcing-examples-master/java-spring$ ./shutdown.sh
 ```
+
