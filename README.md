@@ -1,5 +1,9 @@
-# vagrantbox-starter
-This is a starter guide that shows how to setup a basic local virtual development environment.
+# VagrantBox-starter
+This is a starter guide that shows how to setup a local VDE(Virtual Development Environment) with vagrantbox that consist of:
+1. Ubuntu OS
+2. JDK 8
+3. Docker
+4. A microservice demo app
 
 ## Install VirtualBox
 Goto https://www.virtualbox.org/wiki/Downloads and click Windows hosts to download the exe file(installer) and run the exe to install it.
