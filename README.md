@@ -32,7 +32,8 @@ D:\vagrantbox> vagrant up --provider virtualbox
 ```
 
 ## Start up the demo app
-Inside ubuntu, press CTRL+ALT+T to open up terminal.
+Inside ubuntu, press CTRL+ALT+T to open up terminal. 
+Run the following commmand ./startup.sh
 
 ```
 vagrant@vagrant:~$ cd b2b/event-sourcing-examples-master/java-spring/
@@ -52,6 +53,7 @@ Creating javaspring_apigateway_1
 ```
 
 ## Check status demo app
+Run the following commmand ./status.sh
 ```
 vagrant@vagrant:~/b2b/event-sourcing-examples-master/java-spring$ ./status.sh
 WARNING: The DOCKER_HOST_IP variable is not set. Defaulting to a blank string.
@@ -71,11 +73,13 @@ javaspring_zookeeper_1              /usr/local/zookeeper-3.4.8 ...   Up      0.0
 ```
 
 ## check logs of the app
+Run the following commmand ./logs.sh
 ```
 vagrant@vagrant:~/b2b/event-sourcing-examples-master/java-spring$ ./logs.sh
 ```
 
 ## shutdown the app
+Run the following commmand ./shutdown.sh
 ```
 vagrant@vagrant:~/b2b/event-sourcing-examples-master/java-spring$ ./shutdown.sh
 ```
