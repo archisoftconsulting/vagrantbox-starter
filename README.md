@@ -21,6 +21,10 @@ D:\vagrantbox> vagrant init box-cutter/ubuntu1404-desktop
 ```
 
 ## Download Vagrantfile and scripts folder from this github and paste overwrite into D:\vagrantbox folder
+Download https://github.com/archisoftconsulting/vagrantbox-starter/archive/master.zip
+and extract it.
+Copy Vagrantfile and scripts folder and paste overwrite your D:\vagrantbox
+
 ```
 D:\vagrantbox> dir/w
 ```
@@ -30,6 +34,7 @@ You should see Vagrantfile and scripts folder. Inside scripts folder should have
 ```
 D:\vagrantbox> vagrant up --provider virtualbox
 ```
+Default OS login and password = vagrant/vagrant
 
 ## Start up the demo app
 Inside ubuntu, press CTRL+ALT+T to open up terminal. 
