@@ -25,8 +25,11 @@ D:\vagrantbox> vagrant init box-cutter/ubuntu1404-desktop
 ## Install JDK, Docker and Microservice Demo app
 Download https://github.com/archisoftconsulting/vagrantbox-starter/archive/master.zip
 and extract it.
+
 Copy Vagrantfile and scripts folder and paste overwrite your D:\vagrantbox
-The installation steps all inside above 2 files/folder. (Edit the Vagranfile and install.sh you will see all the command that perform installation)
+The installation steps all inside above 2 files/folder. 
+
+(Edit the Vagranfile and install.sh you will see all the command that perform installation)
 
 ```
 D:\vagrantbox> dir/w
