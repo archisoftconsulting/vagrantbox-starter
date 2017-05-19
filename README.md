@@ -106,6 +106,7 @@ D:\vagrantbox> vagrant suspend
 D:\vagrantbox> vagrant up
 ```
 ## How to "clean up" the vagrantbox and start the base image that you initially downloaded
+Note that DO NOT simply run this. It will format the vagrantbox and go back to the default vagrantbox image.
 ```
 D:\vagrantbox> vagrant destroy
 D:\vagrantbox> vagrant up
