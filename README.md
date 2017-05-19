@@ -77,6 +77,8 @@ Run the following commmand ./logs.sh
 ```
 vagrant@vagrant:~/b2b/event-sourcing-examples-master/java-spring$ ./logs.sh
 ```
+## Browse the app
+Open browser enter http://localhost:8080
 
 ## shutdown the app
 Run the following commmand ./shutdown.sh
