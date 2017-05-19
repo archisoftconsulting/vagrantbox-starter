@@ -5,6 +5,8 @@ This is a starter on setting up a local VDE(Virtual Development Environment) wit
 3. Docker + Docker compose
 4. Microservice demo app
 
+Ubuntu login and password = vagrant/vagrant
+
 ## Install VirtualBox
 Goto https://www.virtualbox.org/wiki/Downloads and click Windows hosts to download the exe file(installer) and run the exe to install it.
 
@@ -34,7 +36,6 @@ You should see Vagrantfile and scripts folder. Inside scripts folder should have
 ```
 D:\vagrantbox> vagrant up --provider virtualbox
 ```
-Default OS login and password = vagrant/vagrant
 
 ## Start up the demo app
 Inside ubuntu, press CTRL+ALT+T to open up terminal. 
