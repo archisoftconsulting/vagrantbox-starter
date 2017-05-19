@@ -108,7 +108,7 @@ D:\vagrantbox> vagrant destroy
 D:\vagrantbox> vagrant up
 ```
 ## How to fine tune the vagrantbox for best performance
-Allocate at least 50-60% of your total RAM and 50-60% of your total CPU core to the vbox.
+Allocate at least 50-60% of your total RAM and 50-60% of your total CPU core to the vbox. You can change the RAM at vagrantfile or manually adjust the virtualBox setting.
 
 ## How to install new software and ensure it can transfer to other vagrantbox
 Several ways to do this:
