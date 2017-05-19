@@ -84,3 +84,27 @@ Run the following commmand ./shutdown.sh
 vagrant@vagrant:~/b2b/event-sourcing-examples-master/java-spring$ ./shutdown.sh
 ```
 
+## How to stop and save state of the vagrantbox
+```
+D:\vagrantbox> vagrant suspend
+```
+## How to start the vagrantbox and restore the state
+```
+D:\vagrantbox> vagrant up
+```
+## How to "clean up" the vagrantbox and start the base image that you initially downloaded
+```
+D:\vagrantbox> vagrant destroy
+D:\vagrantbox> vagrant up
+```
+## How to fine tune the vagrantbox for best performance
+Allocate at least 50-60% of your total RAM and 50-60% of your total CPU core to the vbox.
+
+## How to install new software and ensure it can transfer to other vagrantbox
+Several ways to do this:
+
+1. Edit vagrantfile or install.sh file, add the install command and comment out the rest command that already run. Then enter
+```
+D:\vagrantbox> vagrant provision
+```
+2. vagrant package
