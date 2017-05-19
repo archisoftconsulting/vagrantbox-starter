@@ -109,4 +109,9 @@ Several ways to do this:
 ```
 D:\vagrantbox> vagrant provision
 ```
-2. vagrant package
+2. vagrant package - This command will export the current vbox into a file package.box, and you can transfer the package.box file to others. Then edit vagrantfile to include the package.box when startup vagrant. (Try to avoid this consume disk space, most cases you can transfer vagrantfile and gitclone for the code you working on)
+
+Below vagrantfile to include the package.box
+```
+config.vm.box_url = "file:///G:/vagrantbox_ubuntudesktop_package/package.box"
+```
