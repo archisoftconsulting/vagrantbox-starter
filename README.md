@@ -58,6 +58,7 @@ Creating javaspring_accountsviewservice_1
 Creating javaspring_cdcservice_1
 Creating javaspring_apigateway_1
 ```
+Take note first time statup will take sometime to download the dependencies and compilation.
 
 ## Check status demo app
 Run the following commmand ./status.sh
