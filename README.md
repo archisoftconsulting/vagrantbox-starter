@@ -21,6 +21,7 @@ D:\> cd vagrantbox
 D:\vagrantbox> vagrant plugin install vagrant-docker-compose
 D:\vagrantbox> vagrant init box-cutter/ubuntu1404-desktop
 ```
+Note that for Windows version older than Windows 10, you will need to download Vagrant 1.9.3. Vagrant has compatible issue with Windows.
 
 ## Install JDK, Docker and Microservice Demo app
 Download https://github.com/archisoftconsulting/vagrantbox-starter/archive/master.zip
@@ -40,6 +41,7 @@ You should see Vagrantfile and scripts folder. Inside scripts folder should have
 ```
 D:\vagrantbox> vagrant up --provider virtualbox
 ```
+You will need to monitor the vagrant windows command. It could take some time to download everything...
 
 ## Start up the demo app
 Inside ubuntu, press CTRL+ALT+T to open up terminal. 
