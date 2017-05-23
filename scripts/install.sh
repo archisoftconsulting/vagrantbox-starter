@@ -59,6 +59,6 @@ if [ ! -d "$B2B_HOME/tools/mongodb/data" ]; then
 	sudo echo "sudo docker start mongodb" >> startup.sh && chmod +x startup.sh
 	sudo echo "sudo docker stop mongodb" >> shutdown.sh && chmod +x shutdown.sh
 	sudo echo "sudo docker logs -f mongodb" >> logs.sh && chmod +x logs.sh
-	sudo echo "sudo docker ps" >> logs.sh && chmod +x status.sh
+	sudo echo "sudo docker ps" >> status.sh && chmod +x status.sh
 	#cd $B2B_HOME/tools/mongodb && sudo wget https://download.robomongo.org/1.0.0/linux/robomongo-1.0.0-linux-x86_64-89f24ea.tar.gz && unzip robomongo-1.0.0-linux-x86_64-89f24ea.tar.gz -d $B2B_HOME/tools/mongodb  && rm -rf robomongo-1.0.0-linux-x86_64-89f24ea.tar.gz
 fi 
