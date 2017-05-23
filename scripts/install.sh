@@ -55,5 +55,5 @@ fi
 
 if [ ! -d "$B2B_HOME/tools/mongodb/data" ]; then
 	sudo docker run --name mongodb -d -p 27017:27017 -v $B2B_HOME/tools/mongodb/data:/data/db mongo
-	cd $B2B_HOME/tools/mongodb && sudo wget https://download.robomongo.org/1.0.0/linux/robomongo-1.0.0-linux-x86_64-89f24ea.tar.gz && unzip robomongo-1.0.0-linux-x86_64-89f24ea.tar.gz -d $B2B_HOME/tools/mongodb  && rm -rf robomongo-1.0.0-linux-x86_64-89f24ea.tar.gz
+	#cd $B2B_HOME/tools/mongodb && sudo wget https://download.robomongo.org/1.0.0/linux/robomongo-1.0.0-linux-x86_64-89f24ea.tar.gz && unzip robomongo-1.0.0-linux-x86_64-89f24ea.tar.gz -d $B2B_HOME/tools/mongodb  && rm -rf robomongo-1.0.0-linux-x86_64-89f24ea.tar.gz
 fi 
