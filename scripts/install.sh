@@ -13,7 +13,7 @@ B2B_HOME=/home/vagrant/b2b
 if [ ! -d "$B2B_HOME" ]; then
  
 	sudo mkdir $B2B_HOME && sudo chown -R vagrant:vagrant $B2B_HOME
-	sudo mkdir $B2B_HOME/tools
+	mkdir $B2B_HOME/tools
 
 	# Download
 	# Money Transfer sample
@@ -55,6 +55,5 @@ fi
 
 if [ ! -d "$B2B_HOME/tools/mongodb/data" ]; then
 	sudo docker run --name mongodb -d -p 27017:27017 -v $B2B_HOME/tools/mongodb/data:/data/db mongo
-	cd $B2B_HOME/tools/mongodb && sudo wget https://download.robomongo.org/1.0.0/linux/robomongo-1.0.0-linux-x86_64-89f24ea.tar.gz
-	unzip robomongo-1.0.0-linux-x86_64-89f24ea.tar.gz -d $B2B_HOME/tools/mongodb  && rm -rf robomongo-1.0.0-linux-x86_64-89f24ea.tar.gz
+	cd $B2B_HOME/tools/mongodb && sudo wget https://download.robomongo.org/1.0.0/linux/robomongo-1.0.0-linux-x86_64-89f24ea.tar.gz && unzip robomongo-1.0.0-linux-x86_64-89f24ea.tar.gz -d $B2B_HOME/tools/mongodb  && rm -rf robomongo-1.0.0-linux-x86_64-89f24ea.tar.gz
 fi 
