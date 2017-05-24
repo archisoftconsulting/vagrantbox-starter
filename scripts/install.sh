@@ -54,8 +54,8 @@ if [ ! -d "$B2B_HOME" ]; then
 fi
 
 if [ ! -d "$B2B_HOME/tools/mongodb/data" ]; then
-	mkdir $B2B_HOME/tools/mongodb/data && sudo docker run --name mongodb -d -p 27017:27017 -v $B2B_HOME/tools/mongodb/data:/data/db mongo
-	cd $B2B_HOME/tools/mongodb
+	sudo mkdir $B2B_HOME/tools/mongodb/data && sudo docker run --name mongodb -d -p 27017:27017 -v $B2B_HOME/tools/mongodb/data:/data/db mongo
+	cd $B2B_HOME/tools/mongodb && sudo chown -R vagrant:vagrant $B2B_HOME
 	sudo echo "sudo docker start mongodb" >> startup.sh && chmod +x startup.sh
 	sudo echo "sudo docker stop mongodb" >> shutdown.sh && chmod +x shutdown.sh
 	sudo echo "sudo docker logs -f mongodb" >> logs.sh && chmod +x logs.sh
