@@ -5,7 +5,7 @@
 #sudo apt-get install --yes openjdk-8-jdk
 dpkg -s zip 2>/dev/null >/dev/null || sudo apt-get -y install zip unzip
 dpkg -s openjdk-8-jdk 2>/dev/null >/dev/null || (sudo add-apt-repository ppa:openjdk-r/ppa --yes && sudo apt-get update && sudo apt-get install --yes openjdk-8-jdk)
-sudo usermod -a -G sudo hduser
+sudo usermod -a -G sudo vagrant
 
 # set Home Path
 B2B_HOME=/home/vagrant/b2b
