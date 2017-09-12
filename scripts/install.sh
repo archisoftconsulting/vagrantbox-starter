@@ -1,4 +1,53 @@
 # Install dependencies and software
+###
+## Install Maven
+sudo apt-get install maven
+
+
+## Install Gradle
+sudo apt-get install gradle
+
+
+## Install Node JS
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+
+## Install Yarn
+sudo apt-get install yarn    
+### OR
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update && sudo apt-get install yarn
+### OR
+sudo npm install -g yarnpkg
+### OR
+sudo npm install -g yarn
+
+
+## Install Yeoman
+sudo yarn global add yo
+### OR
+sudo npm install -g yo
+
+
+## Install Bower
+sudo yarn global add bower
+### OR
+sudo npm install -g bower
+
+
+## Install Gulp
+sudo yarn global add gulp-cli
+### OR
+sudo npm install -g gulp-cli
+
+
+## Install JHipster
+sudo yarn global add generator-jhipster
+### OR
+sudo npm install -g generator-jhipster
+###
 #sudo apt-get install zip unzip
 #sudo add-apt-repository ppa:openjdk-r/ppa --yes
 #sudo apt-get update
