@@ -1,17 +1,7 @@
-# Install dependencies and software
-###
-## Install Maven
-sudo apt-get install maven
-
-
-## Install Gradle
-sudo apt-get install gradle
-
 
 ## Install Node JS
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
-
 
 ## Install Yarn
 #sudo apt-get install yarn    
@@ -25,11 +15,20 @@ sudo apt-get update && sudo apt-get install yarn
 #sudo npm install -g yarn
 
 
+
 ## Install Yeoman
 sudo yarn global add yo
 ### OR
 #sudo npm install -g yo
 
+# Install dependencies and software
+###
+## Install Maven
+sudo apt-get install maven
+
+
+## Install Gradle
+sudo apt-get install gradle
 
 ## Install Bower
 sudo yarn global add bower
