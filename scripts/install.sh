@@ -24,8 +24,10 @@ sudo yarn global add yo
 # Install dependencies and software
 ###
 ## Install Maven
-sudo apt-get install maven
-
+#sudo apt-get remove maven2
+sudo add-apt-repository "deb http://ppa.launchpad.net/natecarlson/maven3/ubuntu precise main"
+sudo apt-get update
+sudo apt-get install maven3
 
 ## Install Gradle
 sudo apt-get install gradle
@@ -47,6 +49,10 @@ sudo yarn global add generator-jhipster
 ### OR
 #sudo npm install -g generator-jhipster
 ###
+
+
+
+
 #sudo apt-get install zip unzip
 #sudo add-apt-repository ppa:openjdk-r/ppa --yes
 #sudo apt-get update
