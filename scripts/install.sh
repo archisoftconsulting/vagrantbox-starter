@@ -1,3 +1,29 @@
+##### Official step install jhipster #####
+install nodejs & npm
+
+sudo apt-get install nodejs
+sudo apt-get install npm
+fix naming issue of node to ubuntu
+
+ln -s /usr/bin/nodejs /usr/bin/node
+instal bower.
+
+sudo apt-get install git-core
+sudo npm cache clean
+sudo npm install -g bower
+install gulp
+
+sudo npm install -g gulp
+install yeoman
+
+sudo npm install -g yo
+install JHipster
+
+sudo npm install -g generator-jhipster
+
+##### Done install jhipster #####
+
+
 
 ## Install Node JS
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
