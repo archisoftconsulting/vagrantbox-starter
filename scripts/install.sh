@@ -1,24 +1,23 @@
 ##### Official step install jhipster #####
-install nodejs & npm
-
+#install nodejs & npm
 sudo apt-get install nodejs
 sudo apt-get install npm
-fix naming issue of node to ubuntu
 
+#fix naming issue of node to ubuntu
 ln -s /usr/bin/nodejs /usr/bin/node
-instal bower.
 
+#instal bower.
 sudo apt-get install git-core
 sudo npm cache clean
 sudo npm install -g bower
-install gulp
 
+#install gulp
 sudo npm install -g gulp
-install yeoman
 
+#install yeoman
 sudo npm install -g yo
-install JHipster
 
+#install JHipster
 sudo npm install -g generator-jhipster
 
 ##### Done install jhipster #####
