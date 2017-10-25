@@ -1,4 +1,7 @@
 ##### Official step install jhipster #####
+#install git
+sudo apt-get install git-core
+
 #install nodejs & npm
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
@@ -18,32 +21,20 @@ yarn global add yo && yarn global add generator-jhipster
 #node -v
 
 #instal bower.
-sudo apt-get install git-core
-sudo npm cache clean -f
-sudo npm install -g bower
+#sudo npm cache clean -f
+#sudo npm install -g bower
 
 #install gulp
-sudo npm install -g gulp
+#sudo npm install -g gulp
 
 #install yeoman
-sudo npm install -g yo
+#sudo npm install -g yo
 
 #install JHipster
-sudo npm install -g generator-jhipster
+#sudo npm install -g generator-jhipster
 
 ##### Done install jhipster #####
 
-
-## Install Yarn
-#sudo apt-get install yarn    
-### OR
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt-get update && sudo apt-get install yarn
-### OR
-#sudo npm install -g yarnpkg
-### OR
-#sudo npm install -g yarn
 
 
 
@@ -57,24 +48,6 @@ sudo apt-get install maven3
 
 ## Install Gradle
 sudo apt-get install gradle
-
-## Install Bower
-sudo yarn global add bower
-### OR
-#sudo npm install -g bower
-
-
-## Install Gulp
-sudo yarn global add gulp-cli
-### OR
-#sudo npm install -g gulp-cli
-
-
-## Install JHipster
-sudo yarn global add generator-jhipster
-### OR
-#sudo npm install -g generator-jhipster
-###
 
 
 
