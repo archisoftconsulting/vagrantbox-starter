@@ -12,12 +12,13 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "box-cutter/ubuntu1404-desktop"
+  config.vm.box = "ubuntupackagebox"
+  config.vm.box_url = "file:///G:/vagrantbox_ubuntudesktop_package/package.box"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
-  # config.vm.box_check_update = false
+   config.vm.box_check_update = false
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
@@ -31,7 +32,7 @@ Vagrant.configure("2") do |config|
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
   # your network.
-  # config.vm.network "public_network"
+   config.vm.network "public_network"
 
   # Share an additional folder to the guest VM. The first argument is
   # the path on the host to the actual folder. The second argument is
@@ -49,6 +50,15 @@ Vagrant.configure("2") do |config|
   
      # Customize the amount of memory on the VM:
      vb.memory = "8192"
+	 
+	 # Disable 3d acceleration
+	 vb.customize ["modifyvm", :id, "--accelerate3d", "off"]
+   
+	 # Video memory lowered from 256 to 64
+	 vb.customize ["modifyvm", :id, "--vram", "64"]
+	 
+	  # Set the number of virtual CPUs for the virtual machine
+	vb.customize ["modifyvm", :id, "--cpus", "2"]
    end
   #
   # View the documentation for the provider you are using for more
@@ -69,11 +79,12 @@ Vagrant.configure("2") do |config|
   #   apt-get install -y apache2
   # SHELL
   
-   # Install Docker CE
+  # Install Docker CE
    config.vm.provision :docker
-  # vagrant plugin install vagrant-docker-compose
-   config.vm.provision :docker_compose
+   #vagrant plugin install vagrant-docker-compose
+  config.vm.provision :docker_compose
   
-  # Install additional software
+  # Install eventuate demoapp
   config.vm.provision "shell", path: "scripts/install.sh"
+
 end
