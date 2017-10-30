@@ -1,3 +1,5 @@
+
+
 ##### Official step install jhipster #####
 #install git
 sudo apt-get install git-core
@@ -116,3 +118,14 @@ if [ ! -d "$B2B_HOME/tools/mongodb/data" ]; then
 	sudo echo "sudo docker ps" >> status.sh && chmod +x status.sh
 	#cd $B2B_HOME/tools/mongodb && sudo wget https://download.robomongo.org/1.0.0/linux/robomongo-1.0.0-linux-x86_64-89f24ea.tar.gz && unzip robomongo-1.0.0-linux-x86_64-89f24ea.tar.gz -d $B2B_HOME/tools/mongodb  && rm -rf robomongo-1.0.0-linux-x86_64-89f24ea.tar.gz
 fi 
+
+ if grep -R "131071" "/etc/security/limits.conf"; then
+ 	sudo sh -c "echo '* soft     nproc          131072' >> /etc/security/limits.conf"
+	sudo sh -c "echo '* hard     nproc          131072' >> /etc/security/limits.conf"
+	sudo sh -c "echo '* soft     nofile          131072' >> /etc/security/limits.conf"
+	sudo sh -c "echo '* hard     nofile          131072' >> /etc/security/limits.conf"
+	sudo sh -c "echo 'session required pam_limits.so' >> /etc/pam.d/common-session"
+ fi
+
+
+
